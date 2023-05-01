@@ -179,6 +179,49 @@ a:hover {
     }
 }
 
+/* Waves */
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 79px;
+}
+
+.wave1 .shape-fill {
+    fill: #F1FAEE;
+}
+
+
+.wave2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(115% + 1.3px);
+    height: 79px;
+    transform: rotateY(180deg);
+}
+
+.wave2 .shape-fill {
+    fill: #ADE8F4;
+}
+
 /* Steps Section */
 .steps {
     padding-top: 40px;
@@ -194,6 +237,10 @@ a:hover {
 .steps__content-width {
     max-width: 456px;
     margin: 0 auto;
+}
+
+.z-index-20 {
+    z-index: 20;
 }
 
 @media (min-width: 544px) {
