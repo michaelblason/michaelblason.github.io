@@ -1,22 +1,20 @@
 /* Background Images */
-#img1 {
-    background-image:url(../img/img1.jpg);
-    background-size:750px 600px;
-    background-position: 70% 40%;
-}
-
-#img2 {
-    background-image:url(../img/img2.jpg);
-}
-
-#img3 {
-    background-image:url(../img/img3.jpg);
-}
-
-#img4 {
-    background-image:url(../img/img4.jpg);
-}
-
 #img5 {
     background-image:url(../img/img5.png);
+}
+
+.digit__digit {
+    background-image: url(../img/digit.png);
+}
+
+.braid__words {
+    background-image: url(../img/braid.png);
+}
+
+.grad__speech {
+    background-image: url(../img/grad.png);
+}
+
+.smart__cookie {
+    background-image: url(../img/cookie.png);
 }
