@@ -11,12 +11,12 @@ html {scroll-behavior: smooth;}
 
 a { 
     color: var(--primary-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover { 
     color: var(--primary-color);
-    text-decoration: underline;
+    text-decoration: none;
     opacity: 0.8;
 }
 
