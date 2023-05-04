@@ -13,8 +13,11 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-    <!-- About Stylesheet -->
-    <link rel="stylesheet" href="../css/contact.css">
+    <!-- History Stylesheet -->
+    <link rel="stylesheet" href="../css/history.css">
+
+    <!-- History Javascript -->
+    <script src="../js/history.js"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +26,11 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Gallery Dependencies  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
 </head>
 
@@ -102,19 +110,9 @@
         <!-- Flyout Navigation End -->
 
 
-        <!-- Blobs Start -->
-        <!-- <div class="position-absolute w-100 z-n1" style="opacity: 1;left: -00%;top: -400px;">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#ade8f4" d="M49.8,-48.6C56.6,-31.2,48.7,-10.9,42.7,7.4C36.6,25.7,32.4,42.1,25.1,41.4C17.9,40.8,7.6,23.1,-8.5,16C-24.7,8.9,-46.7,12.3,-54.8,4.6C-62.9,-3.1,-56.9,-21.9,-45.5,-40.3C-34,-58.8,-17,-76.9,2.2,-78.7C21.5,-80.5,43,-66,49.8,-48.6Z" transform="translate(100 100)" />
-            </svg>
-        </div> -->
-        <!-- <div class="position-absolute w-100 z-n1" style="opacity: 1; left: 30%; top: -300px;">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#ade8f4" d="M18.9,-25C21,-12.3,17,-4.7,18,9.5C19.1,23.7,25.3,44.5,17,56.8C8.7,69,-14.1,72.8,-28.3,64C-42.5,55.1,-48.2,33.7,-46.1,17.7C-44.1,1.6,-34.4,-9,-25.4,-23.3C-16.5,-37.5,-8.2,-55.3,0.1,-55.3C8.4,-55.4,16.7,-37.7,18.9,-25Z" transform="translate(100 100)" />
-            </svg>
-        </div> -->
+        <!-- Wave Start -->
         <div class="spacer layer1"></div>
-        <!-- Blobs End -->
+        <!-- Wave End -->
 
 
         <!-- Main Section-->
@@ -122,10 +120,11 @@
 
 
             <!-- Page Title Start-->
-            <header class="pt-10">
+            <header class="py-10">
                 <div class="container">
                     <div class="text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto position-relative z-index-20">
                         <h1 class="display-3 fw-bold mb-3">Our History</h1>
+                        <p class="lead">Browse our gallery from past years.</p>
                     </div>
                 </div>
             </header>
@@ -133,7 +132,65 @@
 
 
             <!-- Page Content Start -->
-            
+            <div class="container pb-5">
+                <div class="portfolio-item row">
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img1.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                      <img class="img-fluid" src="../img/img1.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img2.jpg" class="fancylight popup-btn" data-fancybox-group="light"> 
+                      <img class="img-fluid" src="../img/img2.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/img3.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img4.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/img4.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img5.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/img5.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img6.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/img6.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img7.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/img7.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img8.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/img8.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img9.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/img9.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/img10.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/img10.jpg" alt="">
+                      </a>
+                   </div>
+                   <div class="item col-lg-3 col-md-4 col-6 col-sm">
+                      <a href="../img/about2.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                      <img class="img-fluid" src="../img/about2.jpg" alt="">
+                      </a>
+                   </div>
+                </div>
+             </div>
             <!-- Page Content End -->
 
 
