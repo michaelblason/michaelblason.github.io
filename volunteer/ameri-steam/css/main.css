@@ -50,6 +50,7 @@ a:hover {
 /* Header */
 .header {
     z-index: 2;
+    --bs-body-bg: var(--bs-dark);
 }
 
 /* Flyout Navbar Section */
