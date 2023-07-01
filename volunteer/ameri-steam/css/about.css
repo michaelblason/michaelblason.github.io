@@ -63,6 +63,17 @@ a:hover {
   z-index: 1;
 }
 
+.logo {
+  width: 150px;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
 /* Flyout Navbar Section */
 #navbar {
   position: fixed;

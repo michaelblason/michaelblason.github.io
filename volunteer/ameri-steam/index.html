@@ -52,37 +52,57 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+
+    <!-- Flag Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
   </head>
 
   <body>
     <!-- Header Start -->
     <header class="header p-3 position-absolute start-0 top-0 end-0">
       <div class="d-flex justify-content-between align-items-center">
-        <a href="." class="text-decoration-none text-light fs-5 fw-bold">Ameri-STEAM</a>
+        <a href="."><img class="logo" src="img/logo.png" /></a>
         <div>
-          <button
-            class="navbar-toggler text-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar"
-            aria-controls="navbar"
-            aria-expanded="false"
-            aria-label="Toggle Navigation"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              fill="currentColor"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </button>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="dropdown">
+                  <button class="dropbtn"><span class="fi fi-gb"></span> English</button>
+                  <div class="dropdown-content">
+                    <a href="#"><span class="fi fi-fr"></span> Français</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <button
+                  class="navbar-toggler text-light"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbar"
+                  aria-controls="navbar"
+                  aria-expanded="false"
+                  aria-label="Toggle Navigation"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -267,7 +287,6 @@
 
           <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
             <div class="steps__content-width">
-              <span>01</span>
               <h1 class="h2 mb-4 fw-bold">About Us</h1>
               <p class="mb-4">
                 We believe in the power of mentorship, global citizenship, and the potential of
@@ -287,7 +306,7 @@
       <section class="steps bg-primary">
         <div class="container-custom">
           <div class="row mt-5">
-            <div class="col-12 col-sm-6 d-md-flex order-sm-1 z-index-20">
+            <div class="col-12 col-sm-6 d-md-flex order-sm-1">
               <img
                 src="img/img5.jpg"
                 alt=""
@@ -298,12 +317,11 @@
               />
             </div>
 
-            <div class="col-12 col-sm-6 align-self-center justify-content-md-center z-index-20">
+            <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
               <div class="steps__content-width text-dark">
-                <span>02</span>
                 <h1 class="h2 mb-4 fw-bold">Our History</h1>
                 <p class="mb-4">
-                  Over the years, we've reached countless women, offering them the chance to develop
+                  Over the years, we've reached countless girls, offering them the chance to develop
                   their skills, further their education, and become leaders in their communities.
                   Read more about our journey and significant milestones.
                 </p>
@@ -336,7 +354,7 @@
       <section class="steps container-custom py">
         <div class="container-custom">
           <div class="row mt-5">
-            <div class="col-12 col-sm-6 d-md-flex z-index-20">
+            <div class="col-12 col-sm-6 d-md-flex">
               <img
                 src="img/img6.jpg"
                 alt=""
@@ -347,9 +365,8 @@
               />
             </div>
 
-            <div class="col-12 col-sm-6 align-self-center justify-content-md-center z-index-20">
-              <div class="steps__content-width z-index-20">
-                <span>03</span>
+            <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+              <div class="steps__content-width">
                 <h1 class="h2 mb-4 fw-bold">Contact Us</h1>
                 <p class="mb-4">
                   We would love to hear from you! Whether you have questions about our programs,
@@ -359,6 +376,21 @@
                 <a class="text-reset" href="contact-us/"
                   >Read More <i class="bi bi-arrow-right"></i
                 ></a>
+                <ul class="justify-content-end list-unstyled d-flex">
+                  <li class="ms-3">
+                    <a class="footer__text" href="https://www.instagram.com/aspprofil/"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="ms-3">
+                    <a
+                      class="footer__text"
+                      href="https://www.facebook.com/ameristeamprogram"
+                      aria-label="Facebook"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -457,7 +489,11 @@
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <!-- <li class="ms-3"><a class="footer__text" href="#"><i class="bi bi-instagram"></i></a></li> -->
+          <li class="ms-3">
+            <a class="footer__text" href="https://www.instagram.com/aspprofil/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
           <li class="ms-3">
             <a
               class="footer__text"
