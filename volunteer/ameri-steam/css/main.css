@@ -71,6 +71,12 @@ a:hover {
   border-top-right-radius: 0px;
 }
 
+.logo__link:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  opacity: 1;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: transparent;
