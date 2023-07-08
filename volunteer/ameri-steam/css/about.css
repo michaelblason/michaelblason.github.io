@@ -88,7 +88,21 @@ a:hover {
   right: 0;
   bottom: 0;
   background-color: var(--bs-body-bg);
+  background-image: url(../img/svg/left-wave-scene.svg);
   z-index: 21;
+}
+
+@media (min-width: 576px) {
+  #navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bs-body-bg);
+    background-image: url(../img/svg/wave-scene-vertical.svg);
+    z-index: 21;
+  }
 }
 
 .dropdown-nav__closeNavBtn {
@@ -99,14 +113,14 @@ a:hover {
 }
 
 .dropdown-nav__container {
-  height: 100vh;
+  height: 100svh;
   padding: 0 1rem;
   margin-top: 2.5rem;
 }
 
 @media (min-width: 544px) {
   .dropdown-nav__container {
-    height: 100vh;
+    height: 100svh;
     padding: 0 1rem;
     margin-top: 0rem;
   }
