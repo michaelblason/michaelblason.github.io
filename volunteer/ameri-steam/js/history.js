@@ -1,8 +1,3 @@
-// $('.portfolio-item').isotope({
-//  	itemSelector: '.item',
-//  	layoutMode: 'fitRows'
-//  });
-
 $(".portfolio-menu ul li").click(function () {
   $(".portfolio-menu ul li").removeClass("active");
   $(this).addClass("active");
@@ -29,4 +24,18 @@ $(document).ready(function () {
       enabled: true,
     },
   });
+
+  function disableScroll() {
+    document.body.style.overflow = "hidden";
+    document.body.style.userSelect = "none";
+  }
+
+  function enableScroll() {
+    document.body.style.overflow = "auto";
+    document.body.style.userSelect = "auto";
+  }
+
+  $(".dropdown-nav__openNavBtn").click(disableScroll);
+
+  $(".dropdown-nav__closeNavBtn").click(enableScroll);
 });

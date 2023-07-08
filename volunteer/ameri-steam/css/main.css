@@ -77,6 +77,8 @@ a:hover {
   opacity: 1;
 }
 
+/* Language Button */
+
 /* Dropdown Button */
 .dropbtn {
   background-color: transparent;
@@ -134,7 +136,21 @@ a:hover {
   right: 0;
   bottom: 0;
   background-color: var(--bs-body-bg);
+  background-image: url(../img/svg/left-wave-scene.svg);
   z-index: 4;
+}
+
+@media (min-width: 576px) {
+  #navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bs-body-bg);
+    background-image: url(../img/svg/wave-scene-vertical.svg);
+    z-index: 4;
+  }
 }
 
 .dropdown-nav__closeNavBtn {
