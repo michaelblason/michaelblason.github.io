@@ -140,6 +140,16 @@ a:hover {
   padding-bottom: 5rem;
 }
 
+.mobile__blob {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mobile__blob {
+    display: none;
+  }
+}
+
 /* Accordion */
 .accordion-button:not(.collapsed) {
   color: rgb(34, 37, 31);
