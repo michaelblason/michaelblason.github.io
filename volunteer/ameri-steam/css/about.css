@@ -223,8 +223,15 @@ a:hover {
 }
 
 .pg__padding {
-  padding-top: 6.5rem;
+  padding-top: 2rem;
   padding-bottom: 1.5rem;
+}
+
+@media (min-width: 767px) {
+  .pg__padding {
+    padding-top: 6.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .pg__padding2 {
