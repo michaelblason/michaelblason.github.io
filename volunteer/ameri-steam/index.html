@@ -68,11 +68,16 @@
         <div>
           <div class="container">
             <div class="row">
+              <!-- Language Button -->
               <div class="col">
                 <div class="dropdown">
-                  <button class="dropbtn"><span class="fi fi-gb"></span> English</button>
+                  <button id="language-btn" class="dropbtn">
+                    <span class="fi fi-gb"></span> English
+                  </button>
                   <div class="dropdown-content">
-                    <a href="#"><span class="fi fi-fr"></span> Français</a>
+                    <a id="change-lang" data-lang="fr" href="#"
+                      ><span class="fi fi-fr"></span> Français</a
+                    >
                   </div>
                 </div>
               </div>
@@ -127,8 +132,8 @@
                 />
               </div>
               <div class="col-8 col-sm-10 text-dark">
-                <h3 class="fw-bold">About Us</h3>
-                <p>Find out what makes Ameri-STEAM special.</p>
+                <h3 class="fw-bold translate" id="about-us-title">About Us</h3>
+                <p class="translate" id="about-us-desc">Find out what makes Ameri-STEAM special.</p>
                 <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
               </div>
             </a>
@@ -146,8 +151,10 @@
                 />
               </div>
               <div class="col-8 col-sm-10 text-dark">
-                <h3 class="fw-bold">Our History</h3>
-                <p>Browse our gallery of photos from past years.</p>
+                <h3 class="fw-bold translate" id="our-history-title">Our History</h3>
+                <p class="translate" id="our-history-desc">
+                  Browse our gallery of photos from past years.
+                </p>
                 <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
               </div>
             </a>
@@ -165,8 +172,8 @@
                 />
               </div>
               <div class="col-8 col-sm-10 text-dark">
-                <h3 class="fw-bold">Contact Us</h3>
-                <p>Reach out to us with any questions.</p>
+                <h3 class="fw-bold translate" id="contact-us-title">Contact Us</h3>
+                <p class="translate" id="contact-us-desc">Reach out to us with any questions.</p>
                 <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
               </div>
             </a>
@@ -218,14 +225,17 @@
       <div class="hero__content container-custom h-100 container-xxl position-relative">
         <div class="d-flex h-100 align-items-center hero__content-width">
           <div class="text-light">
-            <h1 class="hero__heading fw-bold mb-4">Your home away from home!</h1>
-            <p class="lead mb-4">
+            <h1 class="hero__heading fw-bold mb-4 translate" id="home-title">
+              Your home away from home!
+            </h1>
+            <p class="lead mb-4 translate" id="home-desc">
               Unlock global opportunities through STEAM enrichment, mentoring, and leadership
               training.
             </p>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLScfXw7hjBvc-AsEIq_6OppTyZvnzp2ZlMrQJLRBMInPpmOQwg/viewform"
-              class="mt-2 btn btn-lg btn-outline-light text-decoration-none"
+              class="mt-2 btn btn-lg btn-outline-light text-decoration-none translate"
+              id="sign-up"
               role="button"
               >Sign Up</a
             >
@@ -234,7 +244,7 @@
       </div>
 
       <a href="#scroll-down" class="hero__scroll-btn">
-        Explore <i class="bi bi-arrow-down-short"></i>
+        <span class="translate" id="explore">Explore</span> <i class="bi bi-arrow-down-short"></i>
       </a>
 
       <a id="hero-video-pause" class="hero__video-btn" aria-label="pause background video">
@@ -288,14 +298,19 @@
 
           <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
             <div class="steps__content-width">
-              <a class="text-reset" href="about-us/"><h1 class="h2 mb-4 fw-bold">About Us</h1></a>
-              <p class="mb-4">
+              <a class="text-reset" href="about-us/"
+                ><h1 class="h2 mb-4 fw-bold translate" id="about-us-header">About Us</h1></a
+              >
+              <p class="mb-4 translate" id="about-us-text">
                 We believe in the power of mentorship, global citizenship, and the potential of
                 young women to become positive agents of change. Read more about our mission, goals,
                 and partners.
               </p>
 
-              <a class="text-reset" href="about-us/">Read More <i class="bi bi-arrow-right"></i></a>
+              <a class="text-reset" href="about-us/"
+                ><span class="translate" id="read-more">Read More</span>
+                <i class="bi bi-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -322,15 +337,16 @@
             <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
               <div class="steps__content-width text-dark">
                 <a class="text-reset" href="our-history/"
-                  ><h1 class="h2 mb-4 fw-bold">Our History</h1></a
+                  ><h1 class="h2 mb-4 fw-bold translate" id="our-history-header">Our History</h1></a
                 >
-                <p class="mb-4">
+                <p class="mb-4 translate" id="our-history-text">
                   Over the years, we've reached hundreds of young women, offering them the chance to
                   develop their skills, further their education, and become leaders in their
                   communities. Read more about our journey and significant milestones.
                 </p>
                 <a class="text-reset" href="our-history/"
-                  >Read More <i class="bi bi-arrow-right"></i
+                  ><span class="translate" id="read-more">Read More</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -372,15 +388,16 @@
             <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
               <div class="steps__content-width">
                 <a class="text-reset" href="contact-us/"
-                  ><h1 class="h2 mb-4 fw-bold">Contact Us</h1></a
+                  ><h1 class="h2 mb-4 fw-bold translate" id="contact-us-header">Contact Us</h1></a
                 >
-                <p class="mb-4">
+                <p class="mb-4 translate" id="contact-us-text">
                   We would love to hear from you! Whether you have questions about our programs,
                   interested in becoming a mentor or partner, or want to make a donation, please
                   reach out to us.
                 </p>
                 <a class="text-reset" href="contact-us/"
-                  >Read More <i class="bi bi-arrow-right"></i
+                  ><span class="translate" id="read-more">Read More</span>
+                  <i class="bi bi-arrow-right"></i
                 ></a>
                 <ul class="justify-content-end list-unstyled d-flex">
                   <li class="ms-3">
@@ -421,7 +438,7 @@
     <!-- Columns Section Start -->
     <section class="bg-primary text-dark pt-4 pb-1">
       <div class="text-center">
-        <h1 class="h2 mb-4 pt-4 pb-4">Resources for Students</h1>
+        <h1 class="h2 mb-4 pt-4 pb-4 translate" id="resources-title">Resources for Students</h1>
       </div>
       <div class="container-custom my-4">
         <div class="row">
@@ -435,8 +452,8 @@
                 height="500"
                 loading="lazy"
               />
-              <h4 class="text-dark">FAQ</h4>
-              <p class="text-dark">
+              <h4 class="text-dark translate" id="faq-title">FAQ</h4>
+              <p class="text-dark translate" id="faq-desc">
                 Answers to common inquiries about Ameri-STEAM, its programs, partnerships, and
                 participation procedures.
               </p>
@@ -452,8 +469,8 @@
                 height="500"
                 loading="lazy"
               />
-              <h4 class="text-dark">Packing List</h4>
-              <p class="text-dark">
+              <h4 class="text-dark translate" id="packing-list-title">Packing List</h4>
+              <p class="text-dark translate" id="packing-list-desc">
                 A comprehensive checklist ensuring participants are well-equipped for Ameri-STEAM
                 programs and events.
               </p>
@@ -465,13 +482,13 @@
               <img
                 src="img/policies-icon.webp"
                 class="mb-4 img-fluid rounded"
-                alt="Staff making a gorup announcement to the students."
+                alt="Staff making a group announcement to the students."
                 width="750"
                 height="500"
                 loading="lazy"
               />
-              <h4 class="text-dark">Policies and Procedures</h4>
-              <p class="text-dark">
+              <h4 class="text-dark translate" id="policies-title">Policies and Procedures</h4>
+              <p class="text-dark translate" id="policies-desc">
                 Detailed guidelines governing Ameri-STEAM's operations, participant conduct, and
                 engagement protocols.
               </p>
@@ -519,4 +536,7 @@
       crossorigin="anonymous"
     ></script>
   </body>
+
+  <!-- Include the language translation script -->
+  <script src="js/main-translations.js"></script>
 </html>
