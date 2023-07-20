@@ -32,6 +32,7 @@ $(document).ready(function () {
       "contact-us-text":
         "We would love to hear from you! Whether you have questions about our programs, interested in becoming a mentor or partner, or want to make a donation, please reach out to us.",
       "read-more": "Read More",
+      "learn-more": "Learn More",
       "sign-up": "Sign Up",
       //prettier-ignore
       "explore": "Explore",
@@ -68,6 +69,7 @@ $(document).ready(function () {
       "contact-us-text":
         "Nous aimerions avoir de vos nouvelles ! Que vous ayez des questions sur nos programmes, que vous soyez intéressé à devenir un mentor ou un partenaire, ou que vous souhaitiez faire un don, n'hésitez pas à nous contacter.",
       "read-more": "En savoir plus",
+      "learn-more": "En savoir plus",
       "sign-up": "S'inscrire",
       //prettier-ignore
       "explore": "Explorer",
