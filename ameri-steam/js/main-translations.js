@@ -50,7 +50,7 @@ $(document).ready(function () {
       "resources-title": "Ressources pour les étudiants",
       "resources-desc":
         "Des directives détaillées régissant les opérations d'Ameri-STEAM, la conduite des participants et les protocoles d'engagement.",
-      "faq-title": "FAQ",
+      "faq-title": "Questions fréquentes",
       "faq-desc":
         "Réponses aux questions courantes sur Ameri-STEAM, ses programmes, partenariats et procédures de participation.",
       "packing-list-title": "Liste de colisage",
