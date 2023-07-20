@@ -98,7 +98,39 @@ $(document).ready(function () {
         console.log(`The key '${id}' was not found in the translations for '${lang}'`);
       }
     });
+
+    // Set language in the HTML tag
+    $("html").attr("lang", lang);
+
+    // Save current language to local storage
+    localStorage.setItem("selectedLang", lang);
   }
+
+  function updateButtonLabels(lang) {
+    var nextLang = lang === "en" ? "fr" : "en";
+
+    // Change dropdown label
+    $("#language-btn").html(
+      '<span class="fi fi-' + languageFlag[lang] + '"></span> ' + languageLabel[lang]
+    );
+
+    // Set next language in change-lang link
+    $("#change-lang").html(
+      '<span class="fi fi-' + languageFlag[nextLang] + '"></span> ' + languageLabel[nextLang]
+    );
+
+    // Set the "data-lang" for "change-lang" to the other language
+    $("#change-lang").attr("data-lang", nextLang);
+  }
+
+  // Get current language from local storage, default to French if not set
+  var currentLang = localStorage.getItem("selectedLang") || "fr";
+
+  // Change language to current language
+  changeLanguage(currentLang);
+
+  // Update button labels
+  updateButtonLabels(currentLang);
 
   $("#change-lang").click(function (e) {
     e.preventDefault();
@@ -109,14 +141,7 @@ $(document).ready(function () {
     var nextLang = lang === "en" ? "fr" : "en";
     $(this).attr("data-lang", nextLang); // Set next language in attribute
 
-    // Change dropdown label
-    $("#language-btn").html(
-      '<span class="fi fi-' + languageFlag[lang] + '"></span> ' + languageLabel[lang]
-    );
-
-    // Set next language in change-lang link
-    $(this).html(
-      '<span class="fi fi-' + languageFlag[nextLang] + '"></span> ' + languageLabel[nextLang]
-    );
+    // Update button labels
+    updateButtonLabels(lang);
   });
 });
