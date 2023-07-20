@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -52,6 +52,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+
+    <!-- Flag Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
   </head>
 
   <body>
@@ -61,29 +67,44 @@
         <div class="d-flex justify-content-between align-items-center">
           <a href="../" class="logo__link"><img class="logo" src="../img/logo.webp" /></a>
           <div>
-            <button
-              class="navbar-toggler text-dark dropdown-nav__openNavBtn"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbar"
-              aria-controls="navbar"
-              aria-expanded="false"
-              aria-label="Toggle Navigation"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                class="bi bi-list"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-            </button>
+            <div class="container">
+              <div class="row">
+                <!-- Language Button -->
+                <div class="col">
+                  <div class="dropdown">
+                    <button id="language-btn" class="dropbtn text-dark"></button>
+                    <div class="dropdown-content">
+                      <a id="change-lang" data-lang="" href=""> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-0">
+                  <button
+                    class="navbar-toggler text-dark dropdown-nav__openNavBtn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar"
+                    aria-controls="navbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      fill="currentColor"
+                      class="bi bi-list"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -108,9 +129,14 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">About Us</h3>
-                  <p>Find out what makes Ameri-STEAM special.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="about-us-title">About Us</h3>
+                  <p class="translate" id="about-us-desc">
+                    Find out what makes Ameri-STEAM special.
+                  </p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -127,9 +153,14 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">Our History</h3>
-                  <p>Browse our gallery of photos from past years.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="our-history-title">Our History</h3>
+                  <p class="translate" id="our-history-desc">
+                    Browse our gallery of photos from past years.
+                  </p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -146,9 +177,12 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">Contact Us</h3>
-                  <p>Reach out to us with any questions.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="contact-us-title">Contact Us</h3>
+                  <p class="translate" id="contact-us-desc">Reach out to us with any questions.</p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -207,8 +241,12 @@
             <div
               class="text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto position-relative z-index-20"
             >
-              <h1 class="display-3 fw-bold mb-3">About us</h1>
-              <p class="lead mb-0">Find out what makes Ameri-STEAM special.</p>
+              <h1 class="display-3 fw-bold mb-3">
+                <span class="translate" id="about-us-title">About us</span>
+              </h1>
+              <p class="lead mb-0 translate" id="about-us-desc">
+                Find out what makes Ameri-STEAM special.
+              </p>
             </div>
           </div>
         </header>
@@ -301,19 +339,25 @@
             >
               <div>
                 <span class="display-3 fw-bold d-block">300</span>
-                <span class="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted"
+                <span
+                  class="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted translate"
+                  id="students"
                   >Students</span
                 >
               </div>
               <div>
                 <span class="display-3 fw-bold d-block">10</span>
-                <span class="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted"
+                <span
+                  class="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted translate"
+                  id="staff"
                   >Staff</span
                 >
               </div>
               <div>
                 <span class="display-3 fw-bold d-block">5</span>
-                <span class="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted"
+                <span
+                  class="d-block fs-9 fw-bolder tracking-wide text-uppercase text-muted translate"
+                  id="corporate-partners"
                   >Corporate Partners</span
                 >
               </div>
@@ -333,21 +377,24 @@
               </picture>
             </div>
             <div class="col-12 col-lg-6">
-              <p class="my-3 small fw-bolder tracking-wider text-uppercase text__highlight">
+              <p
+                class="my-3 small fw-bolder tracking-wider text-uppercase text__highlight translate"
+                id="how-it-started"
+              >
                 How it started
               </p>
-              <h3 class="display-6 fw-bold mb-6">Our Mission</h3>
-              <p>
+              <h3 class="display-6 fw-bold mb-6 translate" id="our-mission-title">Our Mission</h3>
+              <p class="translate" id="about-us-section-1">
                 At Ameri-Steam, we are committed to shaping the future by empowering the young minds
                 of today.
               </p>
-              <p>
+              <p class="translate" id="about-us-section-2">
                 We believe that through our educational enrichment programs, personalized mentoring,
                 and leadership training, we can instill the necessary skills and confidence in our
                 students, helping them make a significant positive impact on their communities and
                 the world at large.
               </p>
-              <p>
+              <p class="translate" id="about-us-section-3">
                 We understand that the long-term prosperity of a community is heavily reliant on the
                 skills, aptitude, and leadership qualities of its leaders. We take immense pride in
                 being a catalyst for change and fostering an environment where young minds are free
@@ -367,27 +414,39 @@
               </picture>
             </div>
             <div class="col-12 col-lg-6">
-              <p class="my-3 small fw-bolder tracking-wider text-uppercase text__highlight">
+              <p
+                class="my-3 small fw-bolder tracking-wider text-uppercase text__highlight translate"
+                id="why-ameri-steam"
+              >
                 Why Ameri-STEAM
               </p>
-              <h3 class="display-6 fw-bold mb-6">Objectives</h3>
+              <h3 class="display-6 fw-bold mb-6 translate" id="objectives-title">Objectives</h3>
               <p>
-                <b>1.</b> We aim to collaborate with local and global public and private
-                organizations. Our goal is to unlock new possibilities and resources that enhance
-                girls' access to internships, training, field trips, international travel, and
-                mentorship programs.
+                <b>1.</b>
+                <span class="translate" id="objectives-1"
+                  >We aim to collaborate with local and global public and private organizations. Our
+                  goal is to unlock new possibilities and resources that enhance girls' access to
+                  internships, training, field trips, international travel, and mentorship
+                  programs.</span
+                >
               </p>
               <p>
-                <b>2.</b> Our focus is on equipping young girls with the necessary skills and
-                qualifications to secure admission into top universities worldwide. But that's not
-                all. We also encourage them to return to their communities, take on leadership
-                roles, and create lasting positive impacts.
+                <b>2.</b>
+                <span class="translate" id="objectives-2"
+                  >Our focus is on equipping young girls with the necessary skills and
+                  qualifications to secure admission into top universities worldwide. But that's not
+                  all. We also encourage them to return to their communities, take on leadership
+                  roles, and create lasting positive impacts.</span
+                >
               </p>
               <p>
-                <b>3.</b> We strive to connect young girls with world leaders through both group and
-                individual mentorship programs. This way, we empower them with the skills and
-                training they need to become exemplary global citizens, responsible leaders, and
-                catalysts of positive change.
+                <b>3.</b>
+                <span class="translate" id="objectives-1"
+                  >We strive to connect young girls with world leaders through both group and
+                  individual mentorship programs. This way, we empower them with the skills and
+                  training they need to become exemplary global citizens, responsible leaders, and
+                  catalysts of positive change.</span
+                >
               </p>
             </div>
           </div>
@@ -401,12 +460,14 @@
     <!-- Footer Start -->
     <footer class="footer bg-primary">
       <div class="d-flex align-items-center flex-column text-dark footer__sign-up px-3">
-        <h1 class="mb-4 text-center">Join the next generation of leaders.</h1>
+        <h1 class="mb-4 text-center translate" id="footer-sign-up">
+          Join the next generation of leaders.
+        </h1>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScfXw7hjBvc-AsEIq_6OppTyZvnzp2ZlMrQJLRBMInPpmOQwg/viewform"
           class="mt-2 btn btn-lg btn-primary"
           role="button"
-          >Sign Up</a
+          ><span class="translate" id="footer-sign-up-btn">Sign Up</span></a
         >
       </div>
       <div
@@ -444,4 +505,7 @@
       crossorigin="anonymous"
     ></script>
   </body>
+
+  <!-- Include the language translation script -->
+  <script src="../js/about-translations.js"></script>
 </html>
