@@ -52,6 +52,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
+
+    <!-- Flag Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
   </head>
 
   <body>
@@ -61,29 +67,44 @@
         <div class="d-flex justify-content-between align-items-center">
           <a href="../" class="logo__link"><img class="logo" src="../img/logo.webp" /></a>
           <div>
-            <button
-              class="navbar-toggler text-dark dropdown-nav__openNavBtn"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbar"
-              aria-controls="navbar"
-              aria-expanded="false"
-              aria-label="Toggle Navigation"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                class="bi bi-list"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-            </button>
+            <div class="container">
+              <div class="row">
+                <!-- Language Button -->
+                <div class="col">
+                  <div class="dropdown">
+                    <button id="language-btn" class="dropbtn text-dark"></button>
+                    <div class="dropdown-content">
+                      <a id="change-lang" data-lang="" href=""> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-0">
+                  <button
+                    class="navbar-toggler text-dark dropdown-nav__openNavBtn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar"
+                    aria-controls="navbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      fill="currentColor"
+                      class="bi bi-list"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -108,9 +129,14 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">About Us</h3>
-                  <p>Find out what makes Ameri-STEAM special.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="about-us-title">About Us</h3>
+                  <p class="translate" id="about-us-desc">
+                    Find out what makes Ameri-STEAM special.
+                  </p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -127,9 +153,14 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">Our History</h3>
-                  <p>Browse our gallery of photos from past years.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="our-history-title">Our History</h3>
+                  <p class="translate" id="our-history-desc">
+                    Browse our gallery of photos from past years.
+                  </p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -146,9 +177,12 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">Contact Us</h3>
-                  <p>Reach out to us with any questions.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="contact-us-title">Contact Us</h3>
+                  <p class="translate" id="contact-us-desc">Reach out to us with any questions.</p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -221,8 +255,8 @@
             <div
               class="text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto position-relative z-index-20"
             >
-              <h1 class="display-3 fw-bold mb-3">FAQ</h1>
-              <p class="lead mb-0">
+              <h1 class="display-3 fw-bold mb-3 translate" id="faq-main-header">FAQ</h1>
+              <p class="lead mb-0 translate" id="faq-main-desc">
                 Answers to commonly asked questions about the program, including applications,
                 schedules, activities, safety measures, and more.
               </p>
@@ -244,17 +278,17 @@
                   aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseOne"
                 >
-                  What are the dates for the next Ameri-STEAM program?
+                  <span class="translate" id="faq-q1"
+                    >What are the dates for the next Ameri-STEAM program?</span
+                  >
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
+                <div class="accordion-body translate" id="faq-a1">
+                  July 14, 2023 to August 31, 2023 with 5 sessions of 10 days. <br /><br />
+                  Future programs:<br />
+                  Hackathon - November 2023<br />
+                  Leadership Bootcamp for Girls - August 2024
                 </div>
               </div>
             </div>
@@ -269,17 +303,14 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseTwo"
                 >
-                  What is the age range for students that want to attend the program?
+                  <span class="translate" id="faq-q2"
+                    >What is the age range for students that want to attend the program?</span
+                  >
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
+                <div class="accordion-body translate" id="faq-a2">
+                  Girls from 13 to 17 years old.
                 </div>
               </div>
             </div>
@@ -294,17 +325,17 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseThree"
                 >
-                  What kind of activities are available for students during their stay?
+                  <span class="translate" id="faq-q3"
+                    >What kind of activities are available for students during their stay?</span
+                  >
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
+                <div class="accordion-body translate" id="faq-a3">
+                  Coding lessons to comprehend contemporary digital interactions, oratory sessions
+                  to sharpen your persuasive skills, leadership workshops to nurture the ability to
+                  inspire community changes, sports activities to promote wellness and foster
+                  teamwork and effort, and English classes to equip students for global engagement.
                 </div>
               </div>
             </div>
@@ -319,18 +350,16 @@
                   aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseFour"
                 >
-                  What are the sleeping arrangements like? How many students are assigned to each
-                  room?
+                  <span class="translate" id="faq-q4"
+                    >What are the sleeping arrangements like? How many students are assigned to each
+                    room?</span
+                  >
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
+                <div class="accordion-body translate" id="faq-a4">
+                  The girls sleep together in shared rooms. Each room is 12 square meters and
+                  equipped with 6 single beds, a small kitchen, a bathroom and air conditioning.
                 </div>
               </div>
             </div>
@@ -345,18 +374,19 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseFive"
                 >
-                  What measures does the program take to ensure the safety and health of its
-                  students, particularly regarding food allergies, medications, and emergencies?
+                  <span class="translate" id="faq-q5"
+                    >What measures does the program take to ensure the safety and health of its
+                    students, particularly regarding food allergies, medications, and
+                    emergencies?</span
+                  >
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
+                <div class="accordion-body translate" id="faq-a5">
+                  Girls with particular health issues are exempted from sports classes for their
+                  safety. The food served also take into account campers' allergies and other health
+                  problems. There is no infirmary available on the campsite, so each participant
+                  with specific health issues is required to bring their own medications.
                 </div>
               </div>
             </div>
@@ -371,18 +401,16 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseSix"
                 >
-                  Can parents contact or visit their children during the program? If so, what are
-                  the guidelines for this?
+                  <span class="translate" id="faq-q6"
+                    >Can parents contact or visit their children during the program? If so, what are
+                    the guidelines for this?</span
+                  >
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
+                <div class="accordion-body translate" id="faq-a6">
+                  Visits are only rarely accepted and under very particular circumstances. If a
+                  visit is allowed, there is a protocol in place that must be followed.
                 </div>
               </div>
             </div>
@@ -397,18 +425,17 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseSeven"
                 >
-                  What is the staff-to-student ratio and what qualifications do the staff members
-                  have?
+                  <span class="translate" id="faq-q7"
+                    >What is the staff-to-student ratio and what qualifications do the staff members
+                    have?</span
+                  >
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.
+                <div class="accordion-body translate" id="faq-a7">
+                  The ratio is 1 instructor for every 6 campers. The instructors and facilitators
+                  are personnel from the educational system. They have training by the organizers
+                  and the Ministry of Camp Management.
                 </div>
               </div>
             </div>
@@ -422,12 +449,14 @@
     <!-- Footer Start -->
     <footer class="footer bg-primary">
       <div class="d-flex align-items-center flex-column text-dark footer__sign-up px-3">
-        <h1 class="mb-4 text-center">Join the next generation of leaders.</h1>
+        <h1 class="mb-4 text-center translate" id="footer-sign-up">
+          Join the next generation of leaders.
+        </h1>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLScfXw7hjBvc-AsEIq_6OppTyZvnzp2ZlMrQJLRBMInPpmOQwg/viewform"
           class="mt-2 btn btn-lg btn-primary"
           role="button"
-          >Sign Up</a
+          ><span class="translate" id="footer-sign-up-btn">Sign Up</span></a
         >
       </div>
       <div
@@ -465,4 +494,7 @@
       crossorigin="anonymous"
     ></script>
   </body>
+
+  <!-- Include the language translation script -->
+  <script src="../js/faq-translations.js"></script>
 </html>
