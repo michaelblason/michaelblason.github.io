@@ -84,7 +84,7 @@ a:hover {
   padding-top: 8rem;
 }
 
-/* Dropdown Button */
+/* Language Button */
 .dropbtn {
   background-color: transparent;
   color: white;
@@ -94,7 +94,6 @@ a:hover {
   border: none;
 }
 
-/* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;

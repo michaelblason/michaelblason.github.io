@@ -60,6 +60,12 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <!-- Flag Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
   </head>
 
   <body>
@@ -69,29 +75,44 @@
         <div class="d-flex justify-content-between align-items-center">
           <a href="../" class="logo__link"><img class="logo" src="../img/logo.webp" /></a>
           <div>
-            <button
-              class="navbar-toggler text-dark dropdown-nav__openNavBtn"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbar"
-              aria-controls="navbar"
-              aria-expanded="false"
-              aria-label="Toggle Navigation"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                fill="currentColor"
-                class="bi bi-list"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
-              </svg>
-            </button>
+            <div class="container">
+              <div class="row">
+                <!-- Language Button -->
+                <div class="col">
+                  <div class="dropdown">
+                    <button id="language-btn" class="dropbtn text-dark"></button>
+                    <div class="dropdown-content">
+                      <a id="change-lang" data-lang="" href=""> </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-0">
+                  <button
+                    class="navbar-toggler text-dark dropdown-nav__openNavBtn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar"
+                    aria-controls="navbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      fill="currentColor"
+                      class="bi bi-list"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -116,9 +137,14 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">About Us</h3>
-                  <p>Find out what makes Ameri-STEAM special.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="about-us-title">About Us</h3>
+                  <p class="translate" id="about-us-desc">
+                    Find out what makes Ameri-STEAM special.
+                  </p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -135,9 +161,14 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">Our History</h3>
-                  <p>Browse our gallery of photos from past years.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="our-history-title">Our History</h3>
+                  <p class="translate" id="our-history-desc">
+                    Browse our gallery of photos from past years.
+                  </p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -154,9 +185,12 @@
                   />
                 </div>
                 <div class="col-8 col-sm-10 text-dark">
-                  <h3 class="fw-bold">Contact Us</h3>
-                  <p>Reach out to us with any questions.</p>
-                  <p>Learn More<i class="bi bi-arrow-right-short"></i></p>
+                  <h3 class="fw-bold translate" id="contact-us-title">Contact Us</h3>
+                  <p class="translate" id="contact-us-desc">Reach out to us with any questions.</p>
+                  <p>
+                    <span class="translate" id="learn-more">Learn More</span
+                    ><i class="bi bi-arrow-right-short"></i>
+                  </p>
                 </div>
               </a>
             </div>
@@ -200,13 +234,15 @@
             <div
               class="text-center col-12 col-sm-9 col-lg-7 col-xl-6 mx-auto position-relative z-index-20"
             >
-              <h1 class="display-3 fw-bold mb-3">Our History</h1>
+              <h1 class="display-3 fw-bold mb-3 translate" id="history-main-header">Our History</h1>
               <p class="lead">
-                Browse our gallery from past years. And find videos from the program on
+                <span class="translate" id="history-main-desc"
+                  >Browse our gallery from past years. And find videos from the program on</span
+                >
                 <a
                   class="text-reset text-und"
                   href="https://www.youtube.com/@ameri-steamprogramchannel4544"
-                  ><u>our YouTube channel.</u></a
+                  ><u><span class="translate" id="youtube-desc">our YouTube channel</span></u></a
                 >
               </p>
             </div>
@@ -260,4 +296,7 @@
       crossorigin="anonymous"
     ></script>
   </body>
+
+  <!-- Include the language translation script -->
+  <script src="../js/history-translations.js"></script>
 </html>

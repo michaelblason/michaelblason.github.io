@@ -80,7 +80,7 @@ a:hover {
   opacity: 1;
 }
 
-/* Dropdown Button */
+/* Language Button */
 .dropbtn {
   background-color: transparent;
   color: white;
@@ -90,7 +90,6 @@ a:hover {
   border: none;
 }
 
-/* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
