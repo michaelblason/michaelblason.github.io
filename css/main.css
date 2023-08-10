@@ -1,5 +1,5 @@
 /* Background Images */
-.volunteer__work {
+.blason__dev {
   background-image: url(../img/blason.svg);
   background-size: cover; /* This will make sure the image covers the whole viewport */
   background-repeat: no-repeat;
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 991px) {
-  .volunteer__work {
+  .blason__dev {
     background-image: url(../img/blason-mobile.svg);
   }
 }
@@ -20,8 +20,8 @@
   background-image: url(../img/braid.png);
 }
 
-.grad__speech {
-  background-image: url(../img/grad.png);
+.transit__app {
+  background-image: url(../img/transit.png);
 }
 
 .smart__cookie {
