@@ -6,6 +6,12 @@
   background-position: center center; /* This centers the image */
 }
 
+@media (max-width: 991px) {
+  .volunteer__work {
+    background-image: url(../img/blason-mobile.svg);
+  }
+}
+
 .digit__digit {
   background-image: url(../img/digit.png);
 }
