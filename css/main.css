@@ -1,20 +1,23 @@
 /* Background Images */
 .volunteer__work {
-    background-image:url(../img/volunteer.png);
+  background-image: url(../img/blason.svg);
+  background-size: cover; /* This will make sure the image covers the whole viewport */
+  background-repeat: no-repeat;
+  background-position: center center; /* This centers the image */
 }
 
 .digit__digit {
-    background-image: url(../img/digit.png);
+  background-image: url(../img/digit.png);
 }
 
 .braid__words {
-    background-image: url(../img/braid.png);
+  background-image: url(../img/braid.png);
 }
 
 .grad__speech {
-    background-image: url(../img/grad.png);
+  background-image: url(../img/grad.png);
 }
 
 .smart__cookie {
-    background-image: url(../img/cookie.png);
+  background-image: url(../img/cookie.png);
 }
